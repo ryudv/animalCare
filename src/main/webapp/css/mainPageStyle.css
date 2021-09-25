@@ -1,0 +1,121 @@
+/* 메인 페이지 - 타이틀 영역 */
+.title {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;    
+}
+.title h1 {
+    font-size: 50px;
+    text-shadow: 4px 4px 4px lightgray;
+}
+.title .heartIcon {
+    width: 40px;
+    height: 40px;
+}
+.title .heartIcon .fa-heartbeat {
+    font-size: 25px;
+    animation: heartbeat 1s linear infinite;
+    color: palevioletred
+}
+@keyframes heartbeat {
+    0% {
+        font-size: 25px;
+    }
+    50% {
+        font-size: 40px;
+    }
+    100% {
+        font-size: 25px;
+    }
+}
+
+/* 메인 페이지 - 버튼 영역 */
+.petBtn {
+    display: flex;
+    justify-content: center;
+}
+.petBtn a img {
+	width: 100px;
+}
+.petBtn a {
+    font-size: 30px;
+}
+.mainSection button {
+	width: 180px;
+	height: 180px;
+	border: none;
+	border-radius: 20px;
+	margin: 10px 20px;
+	background-color: whitesmoke;
+	box-shadow: 2px 2px 4px darkgray;
+}
+.mainSection button:hover {
+	box-shadow: 2px 2px 6px gray;
+}
+.petBtn a h4 {
+	font-size: 30px;
+}
+.petBtn a h4:hover {
+	color: lightsteelblue;
+}
+
+/* 테블릿 가로 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .mainSection .title h1 {
+    	font-size: 40px;
+    }
+    .mainSection .petBtn button {
+    	width: 150px;
+    	height: 150px;
+    	margin: 10px 10px;
+    }
+    .mainSection .petBtn a img {
+    	width: 100px;
+    }
+    .mainSection .petBtn a h4 {
+    	font-size: 25px;
+    }
+}
+/* 테블릿 세로, 모바일 가로 */
+@media all and (min-width:480px) and (max-width: 767px) {
+    .mainSection .title h1 {
+    	font-size: 30px;
+    }
+    .mainSection .petBtn button {
+    	width: 100px;
+    	height: 100px;
+    	margin: 10px 5px;
+    }
+    .mainSection .petBtn a img {
+    	width: 80px;
+    }
+    .mainSection .petBtn a h4 {
+    	font-size: 15px;
+    }
+}
+
+/* 모바일 세로 */
+@media all and (max-width: 479px) {
+    .mainSection .title h1 {
+    	font-size: 15px;
+    }
+    .mainSection .petBtn button {
+    	width: 80px;
+    	height: 80px;
+    	margin: 10px 5px;
+    }
+    .mainSection .petBtn a img {
+    	width: 60px;
+    }
+    .mainSection .petBtn a h4 {
+    	font-size: 13px;
+    }
+    .petBtn {
+    	display: block;
+    }
+}
+
+
+

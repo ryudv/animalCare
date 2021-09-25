@@ -1,0 +1,36 @@
+.mainSection {
+	padding: 50px;
+}
+.mainSection img {
+	width: 50px;
+}
+.mainSection table {
+	width: 400px;
+	margin: 20px auto;
+	background: whitesmoke;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px lightgray;
+}
+.mainSection .subject {
+	font-size: 18px;
+}
+.mainSection .input_wh {
+	margin: 5px 15px;
+	height: 20px;
+}
+.mainSection .input_wh:focus {
+	background: mistyrose;
+}
+input[type=submit] {
+	padding: 10px 15px;
+	margin-top: 15px;
+	border: none;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px lightgray;
+}
+input[type=submit]:hover {
+	background: lightsteelblue;
+	color: whitesmoke;
+	font-weight: bold;
+}

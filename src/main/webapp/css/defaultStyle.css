@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(79, 89, 108);
+    text-shadow: 4px 4px 4px lightgray;
+}
+body {
+    margin: 0 200px;
+    background-color: lavender;
+}
+
+/* 네이게이션 영역 */
+.loginBtn {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.loginBtn .memInfo span {
+    font-size: 18px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.loginBtn .iconBtn a i {
+    font-size: 40px;
+}
+.loginBtn .iconBtn a i:hover {
+    color: lightsteelblue;
+}
+
+.loginBtn .memBtn button {
+    padding: 10px 17px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: none;
+    background: #F2F0EE;
+    box-shadow: 1px 1px 4px lightgray;
+    font-weight: bold;
+    font-size: 15px;
+}
+.loginBtn .memBtn button:hover {
+    box-shadow: 2px 2px 2px lightsteelblue;
+}
+
+/* 메인 페이지 영역 */
+.mainSection {
+    height: 500px;
+    margin: 5px auto 10px;
+    text-align: center;
+    background: #ECE9E6;  
+    background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6); 
+    background: linear-gradient(to top, #FFFFFF, #ECE9E6);
+    border-radius: 20px;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+/* sns버튼 영역 */
+.snsBtn {
+    text-align: center;
+    padding: 0 10px;
+}
+.snsBtn a i {
+    font-size: 25px;
+    margin: 5px;
+}
+.snsBtn a i:hover {
+    color: lightsteelblue;
+}
+
+
+/* 테블릿 가로 */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+	body {
+    	margin: 0 150px;
+    }
+}
+
+/* 테블릿 세로, 모바일 가로 */
+@media all and (min-width:480px) and (max-width: 767px) {
+    body {
+    	margin: 0 100px;
+    }
+    .loginBtn .memInfo span {
+    	font-size: 13px;
+    	font-weight: normal;
+    }
+    .loginBtn .iconBtn a i {
+    	display: none;
+	}
+	.loginBtn .memBtn button {
+		padding: 5px 10px;
+	    margin-left: 5px;
+	    font-weight: normal;
+	    font-size: 13px;
+	}
+}
+
+/* 모바일 세로 */
+@media all and (max-width: 479px) {
+	body {
+    	margin: 0 50px;
+    }
+    .loginBtn .memInfo span {
+    	display: none
+    }
+    .loginBtn .iconBtn a i {
+    	display: none;
+	}
+	.loginBtn .memBtn button {
+		padding: 5px 5px;
+	    margin-left: 5px;
+	    font-weight: normal;
+	    font-size: 10px;
+	}
+	.snsBtn a i {
+	    font-size: 15px;
+	    margin: 3px;
+	}
+}
