@@ -16,6 +16,36 @@ public class Cat {
 	private String disease;
 	private String otherThings;
 	
+	private String cleanChoice1;
+	private String cleanChoice2;
+	private String cleanDate;
+	private String cleanContents;
+	
+	public String getCleanChoice1() {
+		return cleanChoice1;
+	}
+	public void setCleanChoice1(String cleanChoice1) {
+		this.cleanChoice1 = cleanChoice1;
+	}
+	public String getCleanChoice2() {
+		return cleanChoice2;
+	}
+	public void setCleanChoice2(String cleanChoice2) {
+		this.cleanChoice2 = cleanChoice2;
+	}
+	public String getCleanDate() {
+		return cleanDate;
+	}
+	public void setCleanDate(String cleanDate) {
+		this.cleanDate = cleanDate;
+	}
+	public String getCleanContents() {
+		return cleanContents;
+	}
+	public void setCleanContents(String cleanContents) {
+		this.cleanContents = cleanContents;
+	}
+	
 	public String getRecordDate() {
 		return recordDate;
 	}

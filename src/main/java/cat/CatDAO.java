@@ -76,6 +76,23 @@ public class CatDAO {
 		  return -1;
 	}
 	
+	// 청소&목욕 데이터베이스 전송
+		public int clean(Cat cat) {
+			  String sql = "insert into clean values(?, ?, ?, ?, ?)";
+			  try {
+			    pstmt = conn.prepareStatement(sql);
+			    pstmt.setString(1, cat.getCatName());
+			    pstmt.setString(2, cat.getCleanChoice1());
+			    pstmt.setString(3, cat.getCleanChoice2());
+			    pstmt.setString(4, cat.getCleanDate());
+			    pstmt.setString(5, cat.getCleanContents());
+			    return pstmt.executeUpdate();
+			  }catch (Exception e) {
+			 	e.printStackTrace();
+			  }
+			  return -1;
+		}
+	
 	// 반려묘 기본 정보를 출력
 	public ArrayList<Cat> CatInfo(){
 		ArrayList<Cat> list = new ArrayList<Cat>();
