@@ -72,13 +72,14 @@
 	        		</button>
 	        	</form>
 	        </div>
-	        <div class="modCat">
-	        	<form name='frm' method="post" action="cat/catMod/catModAction.jsp">
-	        		<button type="submit" title="반려묘 정보 수정">
-	        			<i class="fas fa-eraser"></i><br><h4>MODIFY</h4>
+	        <div class="infoCat">
+	        	<form name='frm' method="post" action="cat/catInfo/catInfoAction.jsp">
+	        		<button type="submit" title="반려묘 정보 추가">
+	        			<i class="far fa-list-alt"></i><br><h4>INFO</h4>
 	        		</button>
 	        	</form>	        	
-	        </div>
+	        </div>	        
+
 	    </div>
 	    <div class="section2">
 	        <div class="listCat">
@@ -88,10 +89,10 @@
 	        		</button>
 	        	</form>	      	
 	        </div>
-	        <div class="infoCat">
-	        	<form name='frm' method="post" action="cat/catInfo/catInfoAction.jsp">
-	        		<button type="submit" title="반려묘 정보 추가">
-	        			<i class="far fa-list-alt"></i><br><h4>INFO</h4>
+	        <div class="modCat">
+	        	<form name='frm' method="post" action="cat/catMod/catModAction.jsp">
+	        		<button type="submit" title="반려묘 정보 수정">
+	        			<i class="fas fa-eraser"></i><br><h4>MODIFY</h4>
 	        		</button>
 	        	</form>	        	
 	        </div>

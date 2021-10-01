@@ -10,15 +10,18 @@
 body {
     margin: 0 200px;
     background-color: lavender;
+    overflow: hidden;
 }
 
 /* 네이게이션 영역 */
 .loginBtn {
+	width: 100%;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
+    box-sizing: border-box;
 }
 
 .loginBtn .memInfo span {

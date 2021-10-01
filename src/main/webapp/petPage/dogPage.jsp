@@ -71,13 +71,13 @@
 	        		</button>
 	        	</form>
 	        </div>
-	        <div class="modCat">
-	        	<form name='frm' method="post" action="dog/dogMod/dogModAction.jsp">
-	        		<button type="submit" title="반려견 정보 수정">
-	        			<i class="fas fa-eraser"></i><br><h4>MODIFY</h4>
+	        <div class="infoCat">
+	        	<form name='frm' method="post" action="dog/dogInfo/dogInfoAction.jsp">
+	        		<button type="submit" title="반려견 정보 추가">
+	        			<i class="far fa-list-alt"></i><br><h4>INFO</h4>
 	        		</button>
 	        	</form>	        	
-	        </div>
+	        </div>	        
 	    </div>
 	    <div class="section2">
 	        <div class="listCat">
@@ -87,10 +87,10 @@
 	        		</button>
 	        	</form>	      	
 	        </div>
-	        <div class="infoCat">
-	        	<form name='frm' method="post" action="dog/dogInfo/dogInfoAction.jsp">
-	        		<button type="submit" title="강아지 정보">
-	        			<i class="far fa-list-alt"></i><br><h4>INFO</h4>
+	        <div class="modCat">
+	        	<form name='frm' method="post" action="dog/dogMod/dogModAction.jsp">
+	        		<button type="submit" title="반려견 정보 수정">
+	        			<i class="fas fa-eraser"></i><br><h4>MODIFY</h4>
 	        		</button>
 	        	</form>	        	
 	        </div>

@@ -5,7 +5,37 @@ public class Cat {
 	private String catGender;
 	private String catAge;
 	private String catType;
-	private String catWeight;
+	
+	private String hospitalName;
+	private String visitDate;
+	private String symptom;
+	private String treatment;
+	
+	public String getHospitalName() {
+		return hospitalName;
+	}
+	public void setHospitalName(String hospitalName) {
+		this.hospitalName = hospitalName;
+	}
+	public String getVisitDate() {
+		return visitDate;
+	}
+	public void setVisitDate(String visitDate) {
+		this.visitDate = visitDate;
+	}
+	public String getSymptom() {
+		return symptom;
+	}
+	public void setSymptom(String symptom) {
+		this.symptom = symptom;
+	}
+	public String getTreatment() {
+		return treatment;
+	}
+	public void setTreatment(String treatment) {
+		this.treatment = treatment;
+	}
+	
 	public String getCatName() {
 		return catName;
 	}
@@ -30,12 +60,4 @@ public class Cat {
 	public void setCatType(String catType) {
 		this.catType = catType;
 	}
-	public String getCatWeight() {
-		return catWeight;
-	}
-	public void setCatWeight(String catWeight) {
-		this.catWeight = catWeight;
-	}
-	
-	
 }

@@ -1,1 +1,31 @@
-@charset "UTF-8";
+.mainSection {
+	padding: 50px;
+}
+.mainSection img {
+	width: 50px;
+}
+.mainSection table {
+	width: 400px;
+	margin: 20px auto;
+	background: whitesmoke;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px lightgray;
+}
+.mainSection span {
+	font-size: 18px;
+	display: block;
+	margin-bottom: 15px;
+}
+.mainSection button {
+	width: 100px;
+	height: 35px;
+	border: none;
+	margin: 5px;
+	background-color: mistyrose;
+	box-shadow: 2px 2px 2px lightgray;
+	font-size: 13px;
+}
+.mainSection button:hover {
+	box-shadow: 2px 2px 4px darkgray;
+}

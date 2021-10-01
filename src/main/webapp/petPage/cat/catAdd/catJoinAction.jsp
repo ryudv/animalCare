@@ -8,7 +8,6 @@
 <jsp:setProperty name="cat" property="catGender" />
 <jsp:setProperty name="cat" property="catAge" />
 <jsp:setProperty name="cat" property="catType" />
-<jsp:setProperty name="cat" property="catWeight" />
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,11 +44,6 @@
 		script.println("alert('반려묘 품종을 입력하세요')");
 		script.println("history.back()");
 		script.println("</script>");
-	} else if(cat.getCatWeight() == null) {
-		script.println("<script>");
-		script.println("alert('반려묘 몸무게를 입력하세요')");
-		script.println("history.back()");
-		script.println("</script>");
 	} else {
 		CatDAO catDAO = new CatDAO();
 		int result = catDAO.sign(cat);
@@ -62,7 +56,7 @@
 			session.setAttribute("catName", cat.getCatName());
 			
 			script.println("<script>");
-			script.println("alert('등록 완료')");
+			script.println("alert('반려묘 정보가 등록되었습니다')");
 			script.println("location.href='../../catPage.jsp'");
 			script.println("</script>");
 		}
