@@ -59,6 +59,23 @@ public class CatDAO {
 		  return -1;
 	}
 	
+	// 반려묘 신체기록 기록 데이터베이스 전송
+	public int catBody(Cat cat) {
+		  String sql = "insert into catBody values(?, ?, ?, ?, ?)";
+		  try {
+		    pstmt = conn.prepareStatement(sql);
+		    pstmt.setString(1, cat.getCatName());
+		    pstmt.setString(2, cat.getRecordDate());
+		    pstmt.setString(3, cat.getWeight());
+		    pstmt.setString(4, cat.getDisease());
+		    pstmt.setString(5, cat.getOtherThings());
+		    return pstmt.executeUpdate();
+		  }catch (Exception e) {
+		 	e.printStackTrace();
+		  }
+		  return -1;
+	}
+	
 	// 반려묘 기본 정보를 출력
 	public ArrayList<Cat> CatInfo(){
 		ArrayList<Cat> list = new ArrayList<Cat>();

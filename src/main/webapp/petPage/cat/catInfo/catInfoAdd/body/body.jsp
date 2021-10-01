@@ -61,7 +61,7 @@
                 </tr>
                 <tr>
                     <td class="subject">Weight</td>
-                    <td><input type="text" name="weight" class='input_wh' title="체중"></td>
+                    <td><input style="width: 30px" type="text" name="weight" class='input_wh' title="체중"> Kg</td>
                 </tr>
                 <tr>
                     <td class="subject">Disease</td>
@@ -69,7 +69,7 @@
                 </tr>
                 <tr>
                     <td class="subject">Other things</td>
-                    <td style="width:100px; height: 100px;"><textarea style="width:80%; height:80%;"name="otherThings" class='input_wh' title="진료 내용"></textarea></td>
+                    <td style="width:100px; height: 100px;"><textarea style="width:80%; height:80%;"name="otherThings" class='input_wh' title="기타 신체 기록"></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2"><input type="submit" value="SIGN UP" title="등록하기"></td>

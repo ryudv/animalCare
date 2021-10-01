@@ -11,6 +11,36 @@ public class Cat {
 	private String symptom;
 	private String treatment;
 	
+	private String recordDate;
+	private String weight;
+	private String disease;
+	private String otherThings;
+	
+	public String getRecordDate() {
+		return recordDate;
+	}
+	public void setRecordDate(String recordDate) {
+		this.recordDate = recordDate;
+	}
+	public String getWeight() {
+		return weight;
+	}
+	public void setWeight(String weight) {
+		this.weight = weight;
+	}
+	public String getDisease() {
+		return disease;
+	}
+	public void setDisease(String disease) {
+		this.disease = disease;
+	}
+	public String getOtherThings() {
+		return otherThings;
+	}
+	public void setOtherThings(String otherThings) {
+		this.otherThings = otherThings;
+	}
+	
 	public String getHospitalName() {
 		return hospitalName;
 	}

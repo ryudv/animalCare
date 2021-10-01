@@ -51,7 +51,7 @@
 		session.setAttribute("catName", cat.getCatName());
 		script.println("<script>");
 		script.println("alert('진료 기록이 등록되었습니다')");
-		script.println("location.href='hospital.jsp'");
+		script.println("location.href='../catInfoAdd.jsp'");
 		script.println("</script>");
 		
 	}
