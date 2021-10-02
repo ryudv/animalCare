@@ -49,7 +49,7 @@
 	    <form name='frm' method="post" action="bodyAction.jsp">
             <table>
             	<tr>
-            		<td colspan=2><span>Physical records</span></td>
+            		<td colspan=2><span>Physical Records</span></td>
             	</tr>
                 <tr>
                     <td class="subject">Cat Name</td>

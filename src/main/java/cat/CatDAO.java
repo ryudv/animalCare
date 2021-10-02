@@ -77,21 +77,40 @@ public class CatDAO {
 	}
 	
 	// 청소&목욕 데이터베이스 전송
-		public int clean(Cat cat) {
-			  String sql = "insert into clean values(?, ?, ?, ?, ?)";
+		public int food(Cat cat) {
+			  String sql = "insert into food values(?, ?, ?, ?, ?, ?, ?)";
 			  try {
 			    pstmt = conn.prepareStatement(sql);
 			    pstmt.setString(1, cat.getCatName());
-			    pstmt.setString(2, cat.getCleanChoice1());
-			    pstmt.setString(3, cat.getCleanChoice2());
-			    pstmt.setString(4, cat.getCleanDate());
-			    pstmt.setString(5, cat.getCleanContents());
+			    pstmt.setString(2, cat.getFoodChoice1());
+			    pstmt.setString(3, cat.getFoodChoice2());
+			    pstmt.setString(4, cat.getFoodDate());
+			    pstmt.setString(5, cat.getFoodName());
+			    pstmt.setString(6, cat.getPrice());
+			    pstmt.setString(7, cat.getFoodContents());
 			    return pstmt.executeUpdate();
 			  }catch (Exception e) {
 			 	e.printStackTrace();
 			  }
 			  return -1;
 		}
+		
+	// 사료&간식 데이터베이스 전송
+			public int clean(Cat cat) {
+				  String sql = "insert into clean values(?, ?, ?, ?, ?)";
+				  try {
+				    pstmt = conn.prepareStatement(sql);
+				    pstmt.setString(1, cat.getCatName());
+				    pstmt.setString(2, cat.getCleanChoice1());
+				    pstmt.setString(3, cat.getCleanChoice2());
+				    pstmt.setString(4, cat.getCleanDate());
+				    pstmt.setString(5, cat.getCleanContents());
+				    return pstmt.executeUpdate();
+				  }catch (Exception e) {
+				 	e.printStackTrace();
+				  }
+				  return -1;
+			}
 	
 	// 반려묘 기본 정보를 출력
 	public ArrayList<Cat> CatInfo(){

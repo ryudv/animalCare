@@ -21,6 +21,52 @@ public class Cat {
 	private String cleanDate;
 	private String cleanContents;
 	
+	private String foodChoice1;
+	private String foodChoice2;
+	private String foodDate;
+	private String foodName;
+	private String price;
+	private String foodContents;
+	
+	
+	public String getFoodChoice1() {
+		return foodChoice1;
+	}
+	public void setFoodChoice1(String foodChoice1) {
+		this.foodChoice1 = foodChoice1;
+	}
+	public String getFoodChoice2() {
+		return foodChoice2;
+	}
+	public void setFoodChoice2(String foodChoice2) {
+		this.foodChoice2 = foodChoice2;
+	}
+	public String getFoodDate() {
+		return foodDate;
+	}
+	public void setFoodDate(String foodDate) {
+		this.foodDate = foodDate;
+	}
+	public String getFoodName() {
+		return foodName;
+	}
+	public void setFoodName(String foodName) {
+		this.foodName = foodName;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	public String getFoodContents() {
+		return foodContents;
+	}
+	public void setFoodContents(String foodContents) {
+		this.foodContents = foodContents;
+	}
+	
+	
 	public String getCleanChoice1() {
 		return cleanChoice1;
 	}

@@ -72,11 +72,11 @@
                 </tr>
                 <tr>
                     <td class="subject">Price</td>
-                    <td><input type="text" name="price" class='input_wh' title="사료&간식 가격"></td>
+                    <td><input type="text" name="price" class='input_wh' title="가격"></td>
                 </tr>       
                 <tr>
                     <td class="subject">Contents</td>
-                    <td style="width:80px; height: 100px;"><textarea style="width:70%; height:80%;"name="foodContents" class='input_wh' title="사료&간식 특이사항"></textarea></td>
+                    <td style="width:80px; height: 80px;"><textarea style="width:70%; height:80%;"name="foodContents" class='input_wh' title="사료&간식 특이사항"></textarea></td>
                 </tr>                             
 				<tr>
                     <td colspan="2"><input type="submit" value="SIGN UP" title="등록하기"></td>
