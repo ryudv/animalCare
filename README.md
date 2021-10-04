@@ -1,6 +1,9 @@
 # animalCare
 ### 반려동물 관리 프로그램
 
+* #### 메인 화면
+![Untitled](https://user-images.githubusercontent.com/85277819/135890564-1adba600-0bab-44c3-a848-b2aeb19f2153.png)
+
 * #### 국비학원 파이널 프로젝트 (개인 프로젝트)
 
 * #### 프로젝트 주제 선정 이유
