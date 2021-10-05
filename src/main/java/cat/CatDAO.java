@@ -141,5 +141,6 @@ public class CatDAO {
 		return list;
 	}
 	
+	// 검색한 반려묘 정보를 출력
 
 }

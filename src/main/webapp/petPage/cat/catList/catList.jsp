@@ -50,7 +50,7 @@
             		<td colspan=2><span>write down your pet name</span></td>
             	</tr>
 				<tr>
-					<td><input type="text" name="catName"></td>
+					<td><input type="text" name="searchName"></td>
 					<td><input type="submit" value="SEARCH"></td>
 				</tr>
 			</table>

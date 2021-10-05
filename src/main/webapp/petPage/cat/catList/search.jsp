@@ -13,40 +13,44 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-
 <%
-	String catName;
-	catName = request.getParameter("catName");
-	if(catName==null||catName.trim().equals("")){
+	String searchName;
+	searchName = request.getParameter("searchName");
+	if(searchName == null || searchName.trim().equals("")) {
 %>
 
 	<script>
 		alert("반려묘 이름을 검색하세요.");
 		history.back();
-	</script>
-	
+	</script>	
+
 <%
 	} else {
-		%>
-		<script>
-		location.href="catListPrint.jsp";
-	</script>
-<%
-	} 
-		%>
-<%-- 		ArrayList<Cat> list = cat.CatInfo();
-		for(Cat dto : list){
-%>
-			<%=dto.getCatName() %>
-			<%=dto.getCatGender() %>
-			<%=dto.getCatAge() %>
-			<%=dto.getCatType() %>
-	<%
+		ArrayList<Cat> list = cat.CatInfo();
+		for(Cat cc : list) {
+			if(cc.getCatName().equals(searchName)) {
+				%>
+					<%= cc.getCatName() %>
+												
+				<%
+				return;
+			} else {
+				%>
+				
+				<script>
+					alert("등록되지 않은 이름입니다");
+					history.back();
+				</script>	
+				
+				<%
+				return;
+			}
 		}
-	%>
+%>
+		
 <%
-	} 
-%> --%>
+	}
+%>
+
 </body>
 </html>
