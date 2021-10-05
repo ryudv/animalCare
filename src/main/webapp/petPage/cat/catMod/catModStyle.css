@@ -1,1 +1,7 @@
-@charset "UTF-8";
+.mainSection {
+	padding: 50px;
+}
+.mainSection img {
+	width: 50px;
+	margin-bottom: 20px;
+}

@@ -46,7 +46,7 @@
 		script.println("</script>");
 	} else {
 		CatDAO catDAO = new CatDAO();
-		int result = catDAO.sign(cat);
+		int result = catDAO.sign(cat.getCatName(), cat.getCatGender(), cat.getCatAge(), cat.getCatType(), userId);
 		if(result == -1){
 			script.println("<script>");
 			script.println("alert('이미 등록된 이름입니다')");

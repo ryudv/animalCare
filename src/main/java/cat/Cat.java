@@ -5,6 +5,8 @@ public class Cat {
 	private String catGender;
 	private String catAge;
 	private String catType;
+	private String userId;
+	
 	
 	private String hospitalName;
 	private String visitDate;
@@ -28,7 +30,12 @@ public class Cat {
 	private String price;
 	private String foodContents;
 	
-	
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 	public String getFoodChoice1() {
 		return foodChoice1;
 	}

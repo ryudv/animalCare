@@ -27,14 +27,15 @@ public class CatDAO {
 	}
 	
 	// 기본 정보 데이터베이스 전송
-	public int sign(Cat cat) {
-		  String sql = "insert into cat values(?, ?, ?, ?)";
+	public int sign(String catName, String catGender, String catAge, String catType, String userId) {
+		  String sql = "insert into cat values(?, ?, ?, ?, ?)";
 		  try {
 		    pstmt = conn.prepareStatement(sql);
-		    pstmt.setString(1, cat.getCatName());
-		    pstmt.setString(2, cat.getCatGender());
-		    pstmt.setString(3, cat.getCatAge());
-		    pstmt.setString(4, cat.getCatType());
+		    pstmt.setString(1, catName);
+		    pstmt.setString(2, catGender);
+		    pstmt.setString(3, catAge);
+		    pstmt.setString(4, catType);
+		    pstmt.setString(5, userId);
 		    return pstmt.executeUpdate();
 		  }catch (Exception e) {
 		 	e.printStackTrace();
@@ -142,5 +143,22 @@ public class CatDAO {
 	}
 	
 	// 검색한 반려묘 정보를 출력
+	
+	// 반려묘 정보 수정
+	public int update(String catName, String catGender, String catAge, String catType) {
+		String sql = "update cat set catName = ?, catGender = ?, catGender = ?, catType = ?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, catName);
+			pstmt.setString(2, catGender);
+			pstmt.setString(3, catGender);
+			pstmt.setString(3, catType);
+			return pstmt.executeUpdate();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		return -1; //데이터베이스 오류
+	}
+	
 
 }
