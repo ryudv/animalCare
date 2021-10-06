@@ -7,7 +7,6 @@ public class Cat {
 	private String catType;
 	private String userId;
 	
-	
 	private String hospitalName;
 	private String visitDate;
 	private String symptom;
