@@ -1,0 +1,37 @@
+.mainSection {
+	padding: 50px;
+}
+.mainSection img {
+	width: 50px;
+	margin-bottom: 20px;
+}
+.mainSection table {
+	width: 300px;
+	background: whitesmoke;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px lightgray;
+	margin: 0 auto;
+}
+.mainSection table td {
+	margin: 10px 0;
+	padding: 5px;
+}
+.mainSection table th {
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 20px;
+}
+input[type=submit] {
+	padding: 10px 15px;
+	margin-top: 15px;
+	border: none;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px lightgray;
+}
+input[type=submit]:hover {
+	background: lightsteelblue;
+	color: whitesmoke;
+	font-weight: bold;
+	text-shadow: none;
+}

@@ -57,7 +57,7 @@
                 </tr>
                 <tr>
                 	<td class="subject"></td>
-                    <td>
+                    <td style="padding:8px;">
 	                    Clean <input type="radio" name="cleanChoice" value="청소" checked>
 						Bath <input type="radio" name="cleanChoice" value="목욕" checked>
 					</td>

@@ -55,8 +55,8 @@
 	        		</button>
 	        	</a>        	
 	        </div>	        
-
 	    </div>
+	    
 	    <div class="section2">
 	        <div class="food">
 	        	<a href="food/food.jsp">

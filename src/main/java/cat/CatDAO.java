@@ -222,19 +222,20 @@ public class CatDAO {
 	
 	// 반려묘 정보 수정
 	public int update(String catName, String catGender, String catAge, String catType) {
-		String sql = "update cat set catName = ?, catGender = ?, catGender = ?, catType = ?";
+		String sql = "update cat set catName = ?, catGender = ?, catAge = ?, catType = ?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, catName);
 			pstmt.setString(2, catGender);
-			pstmt.setString(3, catGender);
-			pstmt.setString(3, catType);
+			pstmt.setString(3, catAge);
+			pstmt.setString(4, catType);
 			return pstmt.executeUpdate();
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
 		return -1; //데이터베이스 오류
 	}
+	
 	
 
 }

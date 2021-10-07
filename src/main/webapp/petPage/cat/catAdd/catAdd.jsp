@@ -58,7 +58,7 @@
                 </tr>
                 <tr>
                     <td class="subject">AGE</td>
-                    <td><input type="text" name="catAge" class='input_wh'></td>
+                    <td><input type="text" name="catAge" class='input_wh' style="width: 50px;">세</td>
                 </tr>
                 <tr>
                     <td class="subject">TYPE</td>

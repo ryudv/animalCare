@@ -57,7 +57,7 @@
                 </tr>
                 <tr>
                 	<td class="subject"></td>
-                    <td>
+                    <td style="padding:8px;">
                     	Food <input type="radio" name="foodChoice" value="사료" title="사료" checked >
                     	Snack <input type="radio" name="foodChoice" value="간식" title="간식">
 					</td>
