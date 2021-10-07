@@ -17,13 +17,11 @@ public class Cat {
 	private String disease;
 	private String otherThings;
 	
-	private String cleanChoice1;
-	private String cleanChoice2;
+	private String cleanChoice;
 	private String cleanDate;
 	private String cleanContents;
 	
-	private String foodChoice1;
-	private String foodChoice2;
+	private String foodChoice;
 	private String foodDate;
 	private String foodName;
 	private String price;
@@ -35,17 +33,11 @@ public class Cat {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getFoodChoice1() {
-		return foodChoice1;
+	public String getFoodChoice() {
+		return foodChoice;
 	}
-	public void setFoodChoice1(String foodChoice1) {
-		this.foodChoice1 = foodChoice1;
-	}
-	public String getFoodChoice2() {
-		return foodChoice2;
-	}
-	public void setFoodChoice2(String foodChoice2) {
-		this.foodChoice2 = foodChoice2;
+	public void setFoodChoice(String foodChoice) {
+		this.foodChoice = foodChoice;
 	}
 	public String getFoodDate() {
 		return foodDate;
@@ -73,17 +65,11 @@ public class Cat {
 	}
 	
 	
-	public String getCleanChoice1() {
-		return cleanChoice1;
+	public String getCleanChoice() {
+		return cleanChoice;
 	}
-	public void setCleanChoice1(String cleanChoice1) {
-		this.cleanChoice1 = cleanChoice1;
-	}
-	public String getCleanChoice2() {
-		return cleanChoice2;
-	}
-	public void setCleanChoice2(String cleanChoice2) {
-		this.cleanChoice2 = cleanChoice2;
+	public void setCleanChoice(String cleanChoice) {
+		this.cleanChoice = cleanChoice;
 	}
 	public String getCleanDate() {
 		return cleanDate;

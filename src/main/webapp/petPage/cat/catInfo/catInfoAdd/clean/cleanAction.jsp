@@ -5,8 +5,7 @@
 <% request.setCharacterEncoding("utf-8"); %>
 <jsp:useBean id="cat" class="cat.Cat" scope="page" />
 <jsp:setProperty name="cat" property="catName" />
-<jsp:setProperty name="cat" property="cleanChoice1" />
-<jsp:setProperty name="cat" property="cleanChoice2" />
+<jsp:setProperty name="cat" property="cleanChoice" />
 <jsp:setProperty name="cat" property="cleanDate" />
 <jsp:setProperty name="cat" property="cleanContents" />
 <!DOCTYPE html>
@@ -23,7 +22,7 @@
 		script.println("alert('반려묘 이름을 입력하세요')");
 		script.println("history.back()");
 		script.println("</script>");
-	} else if((cat.getCleanChoice1() == null) && (cat.getCleanChoice2() == null)) {
+	} else if(cat.getCleanChoice() == null) {
 		script.println("<script>");
 		script.println("alert('목욕, 청소 목록 중 한가지를 체크하세요')");
 		script.println("history.back()");
@@ -31,6 +30,11 @@
 	} else if(cat.getCleanDate() == null) {
 		script.println("<script>");
 		script.println("alert('날짜를 입력하세요')");
+		script.println("history.back()");
+		script.println("</script>");
+ 	} else if(cat.getCleanContents() == null) {
+ 		script.println("<script>");
+		script.println("alert('기타 내용을 입력하세요')");
 		script.println("history.back()");
 		script.println("</script>");
  	} else {

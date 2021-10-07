@@ -1,0 +1,73 @@
+.mainSection {
+	padding: 50px;
+}
+.mainSection img {
+	width: 50px;
+	margin-bottom: 20px;
+}
+.mainSection table {
+	width: 300px;
+	background: whitesmoke;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px lightgray;
+}
+.mainSection table td {
+	margin: 10px 0;
+	padding: 5px;
+}
+.mainSection table th {
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 20px;
+}
+
+#print {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+.addBtn {
+	display: block;
+	border: none;
+	border-top: lightgray 1px solid;
+	border-right: lightgray 1px solid;
+	border-bottom: lightgray 1px solid;
+	padding: 8px;
+	margin: 5px 0;
+}
+.addBtn:hover {
+	font-weight: bold;
+	box-shadow: 2px 2px 2px lightgray;
+}
+.infoBtn {
+	margin-right: 40px;
+}
+#H {
+	display: none;
+}
+#H table {
+	background: lightyellow;
+	font-size: 14px;
+}
+#C {
+	display: none;
+}
+#C table {
+	background: lightcyan;
+	font-size: 14px;
+}
+#F {
+	display: none;
+}
+#F table {
+	background: lavender;
+	font-size: 14px;
+}
+#B {
+	display: none;
+}
+#B table {
+	background: pink;
+	font-size: 14px;
+}

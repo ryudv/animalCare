@@ -77,18 +77,17 @@ public class CatDAO {
 		  return -1;
 	}
 	
-	// 청소&목욕 데이터베이스 전송
+	// 사료&간식 데이터베이스 전송
 		public int food(Cat cat) {
-			  String sql = "insert into food values(?, ?, ?, ?, ?, ?, ?)";
+			  String sql = "insert into food values(?, ?, ?, ?, ?, ?)";
 			  try {
 			    pstmt = conn.prepareStatement(sql);
 			    pstmt.setString(1, cat.getCatName());
-			    pstmt.setString(2, cat.getFoodChoice1());
-			    pstmt.setString(3, cat.getFoodChoice2());
-			    pstmt.setString(4, cat.getFoodDate());
-			    pstmt.setString(5, cat.getFoodName());
-			    pstmt.setString(6, cat.getPrice());
-			    pstmt.setString(7, cat.getFoodContents());
+			    pstmt.setString(2, cat.getFoodChoice());
+			    pstmt.setString(3, cat.getFoodDate());
+			    pstmt.setString(4, cat.getFoodName());
+			    pstmt.setString(5, cat.getPrice());
+			    pstmt.setString(6, cat.getFoodContents());
 			    return pstmt.executeUpdate();
 			  }catch (Exception e) {
 			 	e.printStackTrace();
@@ -96,16 +95,15 @@ public class CatDAO {
 			  return -1;
 		}
 		
-	// 사료&간식 데이터베이스 전송
+	//  청소&목욕 데이터베이스 전송
 			public int clean(Cat cat) {
-				  String sql = "insert into clean values(?, ?, ?, ?, ?)";
+				  String sql = "insert into clean values(?, ?, ?, ?)";
 				  try {
 				    pstmt = conn.prepareStatement(sql);
 				    pstmt.setString(1, cat.getCatName());
-				    pstmt.setString(2, cat.getCleanChoice1());
-				    pstmt.setString(3, cat.getCleanChoice2());
-				    pstmt.setString(4, cat.getCleanDate());
-				    pstmt.setString(5, cat.getCleanContents());
+				    pstmt.setString(2, cat.getCleanChoice());
+				    pstmt.setString(3, cat.getCleanDate());
+				    pstmt.setString(4, cat.getCleanContents());
 				    return pstmt.executeUpdate();
 				  }catch (Exception e) {
 				 	e.printStackTrace();
@@ -130,19 +128,97 @@ public class CatDAO {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally {
-			try {
-				if(rs!=null)rs.close();
-				if(pstmt!=null)pstmt.close();
-				if(conn!=null)conn.close();
-			} catch (Exception e2) {
-				e2.printStackTrace();
-			}
-		}
+		} 
 		return list;
 	}
 	
-	// 검색한 반려묘 정보를 출력
+	// 진료 기록을 출력
+	public ArrayList<Cat> hSearch(){
+		ArrayList<Cat> hList = new ArrayList<Cat>();
+		try {
+			String sql = "select * from hospital";
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			while(rs.next()){
+				Cat cat =  new Cat();
+				cat.setCatName(rs.getString("catName"));
+				cat.setHospitalName(rs.getString("hospitalName"));
+				cat.setVisitDate(rs.getString("visitDate"));
+				cat.setSymptom(rs.getString("symptom"));
+				cat.setTreatment(rs.getString("treatment"));
+				hList.add(cat);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+		return hList;
+	}
+	
+	// 청소&목욕 정보를 출력
+		public ArrayList<Cat> cSearch(){
+			ArrayList<Cat> cList = new ArrayList<Cat>();
+			try {
+				String sql = "select * from clean";
+				pstmt = conn.prepareStatement(sql);
+				rs = pstmt.executeQuery();
+				while(rs.next()){
+					Cat cat =  new Cat();
+					cat.setCatName(rs.getString("catName"));
+					cat.setCleanChoice(rs.getString("cleanChoice"));
+					cat.setCleanDate(rs.getString("cleanDate"));
+					cat.setCleanContents(rs.getString("cleanContents"));
+					cList.add(cat);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			} 
+			return cList;
+		}
+		
+	// 사료&간식 정보를 출력
+		public ArrayList<Cat> fSearch(){
+			ArrayList<Cat> fList = new ArrayList<Cat>();
+			try {
+				String sql = "select * from food";
+				pstmt = conn.prepareStatement(sql);
+				rs = pstmt.executeQuery();
+				while(rs.next()){
+					Cat cat =  new Cat();
+					cat.setCatName(rs.getString("catName"));
+					cat.setFoodChoice(rs.getString("foodChoice"));
+					cat.setFoodDate(rs.getString("foodDate"));
+					cat.setFoodName(rs.getString("foodName"));
+					cat.setPrice(rs.getString("price"));
+					cat.setFoodContents(rs.getString("foodContents"));
+					fList.add(cat);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			} 
+			return fList;
+		}
+		
+	// 신체 정보를 출력
+		public ArrayList<Cat> bSearch(){
+			ArrayList<Cat> bList = new ArrayList<Cat>();
+			try {
+				String sql = "select * from catBody";
+				pstmt = conn.prepareStatement(sql);
+				rs = pstmt.executeQuery();
+				while(rs.next()){
+					Cat cat =  new Cat();
+					cat.setCatName(rs.getString("catName"));
+					cat.setRecordDate(rs.getString("recordDate"));
+					cat.setWeight(rs.getString("weight"));
+					cat.setDisease(rs.getString("disease"));
+					cat.setOtherThings(rs.getString("otherThings"));
+					bList.add(cat);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			} 
+			return bList;
+		}
 	
 	// 반려묘 정보 수정
 	public int update(String catName, String catGender, String catAge, String catType) {

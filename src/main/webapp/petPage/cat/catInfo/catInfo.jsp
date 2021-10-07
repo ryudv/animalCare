@@ -56,7 +56,7 @@
 				<tr>
 					<td>
 						<a href="catInfoAdd/catInfoAdd.jsp">
-							<button><i class="fas fa-angle-right"></i> <%=dto.getCatName() %></button>
+							<button><%=dto.getCatName() %></button>
 						</a>
 					</td>	
 				</tr>
@@ -66,7 +66,7 @@
 				<tr>
 					<td>
 						<a href="../catAdd/catAdd.jsp">
-							<button title="반려동물 등록 페이지로 이동"><i class="fas fa-angle-right"></i> None</button>
+							<button title="반려동물 등록 페이지로 이동">None</button>
 						</a>
 					</td>	
 				</tr>				

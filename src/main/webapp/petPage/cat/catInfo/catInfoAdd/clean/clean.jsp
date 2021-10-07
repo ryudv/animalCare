@@ -58,8 +58,8 @@
                 <tr>
                 	<td class="subject"></td>
                     <td>
-	                    <input type="checkbox" name="cleanChoice1" value="청소" style="margin:0 15px;" title="목욕"><label for="clean">Clean</label>
-						<input type="checkbox" name="cleanChoice2" value="목욕" style="margin:0 15px;" title="청소"><label for="bath">Bath</label>
+	                    Clean <input type="radio" name="cleanChoice" value="청소" checked>
+						Bath <input type="radio" name="cleanChoice" value="목욕" checked>
 					</td>
                 </tr>
                 <tr>

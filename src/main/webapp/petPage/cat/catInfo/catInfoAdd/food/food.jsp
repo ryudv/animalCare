@@ -58,8 +58,8 @@
                 <tr>
                 	<td class="subject"></td>
                     <td>
-	                    <input type="checkbox" name="foodChoice1" value="사료" style="margin:0 15px;" title="사료"><label for="food">Food</label>
-						<input type="checkbox" name="foodChoice2" value="간식" style="margin:0 15px;" title="간식"><label for="snack">Snack</label>
+                    	Food <input type="radio" name="foodChoice" value="사료" title="사료" checked >
+                    	Snack <input type="radio" name="foodChoice" value="간식" title="간식">
 					</td>
                 </tr>
                 <tr>
@@ -72,7 +72,7 @@
                 </tr>
                 <tr>
                     <td class="subject">Price</td>
-                    <td><input type="text" name="price" class='input_wh' title="가격"></td>
+                    <td><input type="text" name="price" class='input_wh' title="가격" style="width: 80px;">원</td>
                 </tr>       
                 <tr>
                     <td class="subject">Contents</td>
