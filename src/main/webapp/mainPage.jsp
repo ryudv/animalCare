@@ -14,8 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e133d6c60e.js" crossorigin="anonymous"></script>
     <script src="mainPageScript.js"></script>
-	<script>
-</script>
 </head>
 <body onload="makeCursor()">
 	<div id="foot" style="position: absolute;">
@@ -32,10 +30,10 @@
 		//로그인하지 않았을때 보여지는 화면
 		if(userId == null) {
 	%>
-    <!-- 네비게이션 -->
+    <!-- 네비게이션 -->    
     <div class="loginBtn">
         <div class="memInfo">
-            <span>please login 😐</span>
+            <span>please login <span class="face">😐</span></span>
         </div>
         <div class="iconBtn">
             <a href="mainPage.jsp"><i class="fas fa-bone"></i></a>

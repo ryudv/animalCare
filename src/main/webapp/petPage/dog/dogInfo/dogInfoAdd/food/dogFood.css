@@ -27,7 +27,7 @@
 	width: 80px;
 }
 .mainSection .input_wh {
-	margin: 5px 15px;
+	margin: 2px 15px;
 	height: 20px;
 }
 .mainSection .input_wh:focus {
@@ -45,4 +45,8 @@ input[type=submit]:hover {
 	color: whitesmoke;
 	font-weight: bold;
 	text-shadow: none;
+}
+input[type=radio] {
+	margin-right: 20px;
+	margin-left: 5px;
 }

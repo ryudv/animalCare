@@ -57,9 +57,9 @@
                 </tr>
                 <tr>
                 	<td class="subject"></td>
-                    <td>
-	                    <input type="checkbox" name="foodChoice1" value="사료" style="margin:0 15px;" title="사료"><label for="food">Food</label>
-						<input type="checkbox" name="foodChoice2" value="간식" style="margin:0 15px;" title="간식"><label for="snack">Snack</label>
+                    <td style="padding:8px;">
+                    	Food <input type="radio" name="foodChoice" value="사료" title="사료" checked >
+                    	Snack <input type="radio" name="foodChoice" value="간식" title="간식">
 					</td>
                 </tr>
                 <tr>

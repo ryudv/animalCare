@@ -3,8 +3,8 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.PrintWriter" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="cat.CatDAO" %>
-<%@ page import="cat.Cat" %>
+<%@ page import="dog.DogDAO" %>
+<%@ page import="dog.Dog" %>
 <% request.setCharacterEncoding("UTF-8"); %>
 <% response.setContentType("text/html;charset=utf-8"); %>
 <!DOCTYPE html>
@@ -21,8 +21,8 @@
 			userID = (String)session.getAttribute("userID");
 		}
 		
-		if(request.getParameter("catGender") == null || request.getParameter("catAge") == null || request.getParameter("catType") == null
-				|| request.getParameter("catGender").equals("") || request.getParameter("catAge").equals("") || request.getParameter("catType").equals("")){
+		if(request.getParameter("dogGender") == null || request.getParameter("dogAge") == null || request.getParameter("dogType") == null
+				|| request.getParameter("dogGender").equals("") || request.getParameter("dogAge").equals("") || request.getParameter("dogType").equals("")){
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
 				script.println("alert('입력이 안 된 사항이 있습니다')");
@@ -30,8 +30,8 @@
 				script.println("</script>");
 			}else{
 				// 정상적으로 입력이 되었다면 글 수정 로직을 수행한다
-				CatDAO catDAO = new CatDAO();
-				int result = catDAO.update(request.getParameter("catGender"), request.getParameter("catAge"), request.getParameter("catType"));
+				DogDAO dogDAO = new DogDAO();
+				int result = dogDAO.update(request.getParameter("dogGender"), request.getParameter("dogAge"), request.getParameter("dogType"));
 				// 데이터베이스 오류인 경우
 				if(result == -1){
 					PrintWriter script = response.getWriter();
@@ -43,8 +43,8 @@
 				}else {
 					PrintWriter script = response.getWriter();
 					script.println("<script>");
-					script.println("alert('반려묘 정보가 수정되었습니다')");
-					script.println("location.href='catChange.jsp'");
+					script.println("alert('반려견 정보가 수정되었습니다')");
+					script.println("location.href='dogChange.jsp'");
 					script.println("</script>");
 				}
 			

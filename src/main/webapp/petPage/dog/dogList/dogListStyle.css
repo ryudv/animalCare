@@ -1,1 +1,39 @@
-@charset "UTF-8";
+.mainSection {
+	padding: 50px;
+}
+.mainSection img {
+	width: 50px;
+	margin-bottom: 20px;
+}
+.mainSection table {
+	width: 350px;
+	margin: 10px auto;
+	background: whitesmoke;
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px lightgray;
+}
+.mainSection span {
+	font-size: 20px;
+	display: block;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+input[type=text] {
+	height: 25px;
+}
+input[type=text]:focus {
+	background: mistyrose;
+}
+input[type=submit] {
+	padding: 10px 15px;
+	border: none;
+	font-weight: bold;
+	box-shadow: 2px 2px 2px lightgray;
+}
+input[type=submit]:hover {
+	background: lightsteelblue;
+	color: whitesmoke;
+	font-weight: bold;
+	text-shadow: none;
+}

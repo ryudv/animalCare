@@ -221,21 +221,31 @@ public class CatDAO {
 		}
 	
 	// 반려묘 정보 수정
-	public int update(String catName, String catGender, String catAge, String catType) {
-		String sql = "update cat set catName = ?, catGender = ?, catAge = ?, catType = ?";
+	public int update(String catGender, String catAge, String catType) {
+		String sql = "update cat set catGender = ?, catAge = ?, catType = ?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, catName);
-			pstmt.setString(2, catGender);
-			pstmt.setString(3, catAge);
-			pstmt.setString(4, catType);
+			pstmt.setString(1, catGender);
+			pstmt.setString(2, catAge);
+			pstmt.setString(3, catType);
 			return pstmt.executeUpdate();
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
-		return -1; //데이터베이스 오류
+		return -1;
 	}
 	
-	
+	// 반려묘 정보 삭제
+	public int delete(String catName) {
+		String sql = "delete from cat where catName = ?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, catName);
+			return pstmt.executeUpdate();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		return -1; 
+	}
 
 }

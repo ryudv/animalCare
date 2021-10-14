@@ -57,7 +57,7 @@
             	</tr>
                 <tr>
                     <td class="subject">NAME</td>
-                    <td><input type="text" name="catName" class='input_wh' value="<%= cc.getCatName() %>"></td>
+                    <td><%= cc.getCatName() %></td>
                 </tr>
                 <tr>
                     <td class="subject">GENDER</td>

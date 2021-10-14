@@ -50,26 +50,34 @@
             <table>
 	   		<%
 		   		ArrayList<Cat> list = cat.CatInfo();
-				for(Cat cc : list) {
-	   		%>
-	   			<tr>
-	   				<th><%= cc.getCatName() %></th>
-	   			</tr>
-	   			<tr>
-	   				<td>나이 : <%= cc.getCatAge() %>세</td>
-	   			</tr>
-	   			<tr>
-	   				<td>성별 : <%= cc.getCatGender() %></td>
-	   			</tr>
-	   			<tr>
-	   				<td>품종 : <%= cc.getCatType() %></td>
-	   			</tr>
-	   			<tr>
-                    <td colspan="2"><input type="submit" value="DELETE" title="삭제하기" onclick="deleteBtn()"></td>                 
-                </tr>
-	   		</table>	       
-            <%				
-				}
+	   			if(list == null) {
+	   				%>
+	   				<tr>
+	   					<td>등록된 정보가 없습니다.</td>
+	   				</tr>
+	   				<%
+	   			} else {
+					for(Cat cc : list) {
+		   		%>
+		   			<tr>
+		   				<th><%= cc.getCatName() %></th>
+		   			</tr>
+		   			<tr>
+		   				<td>나이 : <%= cc.getCatAge() %>세</td>
+		   			</tr>
+		   			<tr>
+		   				<td>성별 : <%= cc.getCatGender() %></td>
+		   			</tr>
+		   			<tr>
+		   				<td>품종 : <%= cc.getCatType() %></td>
+		   			</tr>
+		   			<tr>
+	                    <td colspan="2"><input type="button" id="btn" value="DELETE" title="삭제하기" onclick="deleteBtn()"></td>                 
+	                </tr>
+		   		</table>	       
+	            <%				
+					}
+	   			}
 			%>
         </form>
 	   		
@@ -84,10 +92,11 @@
     
     <script>
     	function deleteBtn() {
-    		if (confirm("반려묘 정보를 삭제 하시겠습니까?") == true){
-    			document.getElementById('frm').submit();
+    		if (confirm("반려묘 정보를 삭제하시겠습니까?") == true){   			
+    			let btn = document.getElementById("btn");
+    			btn.type = "submit";
     		}else{
-    		    return;
+    			location.href='catDelete.jsp';
     		}
     	}
     </script>

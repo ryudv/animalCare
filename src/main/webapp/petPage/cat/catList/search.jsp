@@ -19,35 +19,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500;800&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/e133d6c60e.js" crossorigin="anonymous"></script>
 	<script src="../../../mainPageScript.js"></script>
-	<script>
-		function hospitalPrint(){
-			document.getElementById("C").style.display="none";
-			document.getElementById("F").style.display="none";
-			document.getElementById("B").style.display="none";
-			document.getElementById("H").style.display="block";
-		}
-		
-		function cleanPrint(){
-			document.getElementById("H").style.display="none";
-			document.getElementById("F").style.display="none";
-			document.getElementById("B").style.display="none";
-			document.getElementById("C").style.display="block";
-		}
-		
-		function foodPrint(){
-			document.getElementById("H").style.display="none";
-			document.getElementById("C").style.display="none";
-			document.getElementById("B").style.display="none";
-			document.getElementById("F").style.display="block";
-		}
-		
-		function bodyPrint(){
-			document.getElementById("H").style.display="none";
-			document.getElementById("C").style.display="none";
-			document.getElementById("F").style.display="none";
-			document.getElementById("B").style.display="block";
-		}
-	</script>	
 </head>
 <body onload="makeCursor()">
 	<div id="foot" style="position: absolute;">
@@ -117,10 +88,10 @@
    		
    		<!-- 메뉴 버튼 -->
    		<div class="infoBtn">
-			<button class='addBtn' onclick='hospitalPrint();' style="background: lightyellow;">진료기록</button>
-			<button class='addBtn' onclick='cleanPrint();' style="background: lightcyan;">청소&목욕기록</button>
-			<button class='addBtn' onclick='foodPrint();' style="background: lavender;">사료&간식정보</button>
-			<button class='addBtn' onclick='bodyPrint();' style="background: pink;">신체정보</button>
+			<button class='addBtn' onclick='hospitalPrint();' style="background: #ffddee;">진료기록</button>
+			<button class='addBtn' onclick='cleanPrint();' style="background: #f6ddff;">청소&목욕기록</button>
+			<button class='addBtn' onclick='foodPrint();' style="background: #eeddff;">사료&간식정보</button>
+			<button class='addBtn' onclick='bodyPrint();' style="background: #e5ddff;">신체정보</button>
 		</div>
 		
 		<!-- 정보 출력 영역 -->
@@ -244,5 +215,35 @@
         <a target="blank" href="http://twitter.com/share" title="트위터에 공유"><i class="fab fa-twitter-square"></i></a>
         <a target="blank" href="https://instagram.com" title="인스타그램에 공유"><i class="fab fa-instagram-square"></i></a>
     </div>	
+    
+    <script>
+		function hospitalPrint(){
+			document.getElementById("H").style.display="block";
+			document.getElementById("C").style.display="none";
+			document.getElementById("F").style.display="none";
+			document.getElementById("B").style.display="none";
+		}
+		
+		function cleanPrint(){
+			document.getElementById("H").style.display="none";
+			document.getElementById("F").style.display="none";
+			document.getElementById("B").style.display="none";
+			document.getElementById("C").style.display="block";
+		}
+		
+		function foodPrint(){
+			document.getElementById("H").style.display="none";
+			document.getElementById("C").style.display="none";
+			document.getElementById("B").style.display="none";
+			document.getElementById("F").style.display="block";
+		}
+		
+		function bodyPrint(){
+			document.getElementById("H").style.display="none";
+			document.getElementById("C").style.display="none";
+			document.getElementById("F").style.display="none";
+			document.getElementById("B").style.display="block";
+		}
+	</script>	
 </body>
 </html>

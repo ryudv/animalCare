@@ -5,8 +5,7 @@
 <% request.setCharacterEncoding("utf-8"); %>
 <jsp:useBean id="dog" class="dog.Dog" scope="page" />
 <jsp:setProperty name="dog" property="dogName" />
-<jsp:setProperty name="dog" property="foodChoice1" />
-<jsp:setProperty name="dog" property="foodChoice2" />
+<jsp:setProperty name="dog" property="foodChoice" />
 <jsp:setProperty name="dog" property="foodDate" />
 <jsp:setProperty name="dog" property="foodName" />
 <jsp:setProperty name="dog" property="price" />
@@ -25,7 +24,7 @@
 		script.println("alert('반려견 이름을 입력하세요')");
 		script.println("history.back()");
 		script.println("</script>");
-	} else if((dog.getFoodChoice1() == null) && (dog.getFoodChoice2() == null)) {
+	} else if(dog.getFoodChoice() == null) {
 		script.println("<script>");
 		script.println("alert('사료, 간식 목록 중 한가지를 체크하세요')");
 		script.println("history.back()");
