@@ -46,14 +46,14 @@
 		<div class="section1">
 	        <div class="modBtn">
 	        	<a href="change/dogChange.jsp">
-	        		<button type="submit" title="반려견 정보 수정">
+	        		<button type="submit" title="반려견 정보 수정" onmouseenter="zoomIn()" onmouseleave="zoomOut()">
 	        			<i class="far fa-edit"></i><br><h4>CHANGE</h4>
 	        		</button>
 	        	</a>
 	        </div>
 	        <div class="delBtn">
 	        	<a href="delete/dogDelete.jsp">
-	        		<button type="submit" title="반려견 정보 삭제">
+	        		<button type="submit" title="반려견 정보 삭제" onmouseenter="zoomIn()" onmouseleave="zoomOut()">
 	        			<i class="far fa-trash-alt"></i><br><h4>DELETE</h4>
 	        		</button>
 	        	</a>        	

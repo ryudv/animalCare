@@ -67,14 +67,14 @@
 	    <div class="section1">
 	        <div class="addCat">
 	        	<form name='frm' method="post" action="cat/catAdd/catAddAction.jsp">
-	        		<button type="submit" title="반려묘 신규 등록">
+	        		<button type="submit" title="반려묘 신규 등록" onmouseenter="zoomIn()" onmouseleave="zoomOut()">
 	        			<i class="fas fa-folder-plus"></i><br><h4>ADD</h4>
 	        		</button>
 	        	</form>
 	        </div>
 	        <div class="infoCat">
 	        	<form name='frm' method="post" action="cat/catInfo/catInfoAction.jsp">
-	        		<button type="submit" title="반려묘 정보 추가">
+	        		<button type="submit" title="반려묘 정보 추가" onmouseenter="zoomIn()" onmouseleave="zoomOut()">
 	        			<i class="far fa-list-alt"></i><br><h4>INFO</h4>
 	        		</button>
 	        	</form>	        	
@@ -84,14 +84,14 @@
 	    <div class="section2">
 	        <div class="listCat">
 	        	<form name='frm' method="post" action="cat/catList/catListAction.jsp">
-	        		<button type="submit" title="반려묘 조회">
+	        		<button type="submit" title="반려묘 조회" onmouseenter="zoomIn()" onmouseleave="zoomOut()">
 	        			<i class="far fa-edit"></i><br><h4>LIST</h4>
 	        		</button>
 	        	</form>	      	
 	        </div>
 	        <div class="modCat">
 	        	<form name='frm' method="post" action="cat/catMod/catModAction.jsp">
-	        		<button type="submit" title="반려묘 정보 수정">
+	        		<button type="submit" title="반려묘 정보 수정" onmouseenter="zoomIn()" onmouseleave="zoomOut()">
 	        			<i class="fas fa-eraser"></i><br><h4>MODIFY</h4>
 	        		</button>
 	        	</form>	        	

@@ -29,12 +29,13 @@ body {
     vertical-align: middle;
     font-weight: bold;
 }
-
-.loginBtn .iconBtn a i {
-    font-size: 40px;
+.loginBtn .iconBtn:hover {
+    -ms-transform: rotate(20deg); 
+	-webkit-transform: rotate(20deg);
+	transform: rotate(20deg); 
 }
-.loginBtn .iconBtn a i:hover {
-    color: lightsteelblue;
+.loginBtn .iconBtn a i {
+    font-size: 45px;
 }
 
 .loginBtn .memBtn button {

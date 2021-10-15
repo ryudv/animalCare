@@ -43,14 +43,14 @@
 	    <div class="section1">
 	        <div class="hospital">
 	        	<a href="hospital/hospital.jsp">
-	        		<button type="submit" title="진료 기록">
+	        		<button type="submit" title="진료 기록" onmouseenter="zoomIn()" onmouseleave="zoomOut()">
 	        			<i class="fas fa-stethoscope"></i><br><h4>HOSPITAL</h4>
 	        		</button>
 	        	</a>
 	        </div>
 	        <div class="clean">
 	        	<a href="clean/clean.jsp">
-	        		<button type="submit" title="목욕 & 청소 기록">
+	        		<button type="submit" title="목욕 & 청소 기록" onmouseenter="zoomIn()" onmouseleave="zoomOut()">
 	        			<i class="fas fa-bath"></i><br><h4>CLEAN & BATH</h4>
 	        		</button>
 	        	</a>        	
@@ -60,14 +60,14 @@
 	    <div class="section2">
 	        <div class="food">
 	        	<a href="food/food.jsp">
-	        		<button type="submit" title="사료 & 간식 정보">
+	        		<button type="submit" title="사료 & 간식 정보" onmouseenter="zoomIn()" onmouseleave="zoomOut()">
 	        			<i class="fas fa-utensils"></i><br><h4>FOOD</h4>
 	        		</button>
 	        	</a>     	
 	        </div>
 	        <div class="body">
 	        	<a href="body/body.jsp">
-	        		<button type="submit" title="기타 반려묘 특이사항">
+	        		<button type="submit" title="기타 반려묘 특이사항" onmouseenter="zoomIn()" onmouseleave="zoomOut()">
 	        			<i class="fas fa-cat"></i><br><h4>BODY</h4>
 	        		</button>
 	        	</a>       	
