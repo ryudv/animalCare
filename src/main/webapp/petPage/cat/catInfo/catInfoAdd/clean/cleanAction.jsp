@@ -16,7 +16,14 @@
 </head>
 <body>
 <%
+
+	String userId = null;
 	PrintWriter script = response.getWriter();
+	
+	if(session.getAttribute("userId") != null){
+		userId = (String)session.getAttribute("userId");
+	}
+
 	if(cat.getCatName() == null) {
 		script.println("<script>");
 		script.println("alert('반려묘 이름을 입력하세요')");

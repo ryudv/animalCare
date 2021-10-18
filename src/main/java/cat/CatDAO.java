@@ -237,7 +237,7 @@ public class CatDAO {
 	
 	// 반려묘 정보 삭제
 	public int delete(String catName) {
-		String sql = "delete from cat where catName = ?";
+		String sql = "DELETE FROM cat WHERE catName = ?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, catName);

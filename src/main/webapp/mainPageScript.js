@@ -7,15 +7,15 @@ function makeCursor() {
 }
 
 function mainZoomIn(e) {
-    event.target.style.width = "195px";
-    event.target.style.height = "195px";
-    event.target.style.transition = "all 0.3s";
+    event.target.style.transform = "scale(1.1)";
+    event.target.style.zIndex = 1;
+    event.target.style.transition = "all 0.4s";
  }
 
  function mainZoomOut(e) {
-    event.target.style.width = "180px";
-    event.target.style.height = "180px";
-    event.target.style.transition = "all 0.3s";
+    event.target.style.transform = "scale(1)";
+    event.target.style.zIndex = 0;
+    event.target.style.transition = "all 0.4s";
  }
 
 function zoomIn(e) {

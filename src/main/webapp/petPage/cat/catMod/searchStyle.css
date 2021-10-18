@@ -3,37 +3,30 @@
 }
 .mainSection img {
 	width: 50px;
-	margin-bottom: 20px;
 }
 .mainSection table {
-	width: 300px;
+	width: 400px;
+	margin: 20px auto;
 	background: whitesmoke;
 	padding: 30px;
 	border-radius: 20px;
 	box-shadow: 2px 2px 4px lightgray;
-	margin: 0 auto;
 }
-.mainSection table td {
-	margin: 10px 0;
-	padding: 5px;
-}
-.mainSection table th {
-	margin-bottom: 20px;
-	padding: 5px;
+.mainSection span {
 	font-size: 20px;
-}
-input[type=button] {
-	padding: 10px 15px;
-	margin-top: 15px;
-	border: none;
+	display: block;
+	margin-bottom: 20px;
 	font-weight: bold;
-	box-shadow: 2px 2px 2px lightgray;
 }
-input[type=button]:hover {
-	background: lightsteelblue;
-	color: whitesmoke;
-	font-weight: bold;
-	text-shadow: none;
+.mainSection .subject {
+	font-size: 18px;
+}
+.mainSection .input_wh {
+	margin: 5px 15px;
+	height: 20px;
+}
+.mainSection .input_wh:focus {
+	background: mistyrose;
 }
 input[type=submit] {
 	padding: 10px 15px;
@@ -41,4 +34,13 @@ input[type=submit] {
 	border: none;
 	font-weight: bold;
 	box-shadow: 2px 2px 2px lightgray;
+}
+input[type=submit]:hover {
+	background: lightsteelblue;
+	color: whitesmoke;
+	font-weight: bold;
+	text-shadow: none;
+}
+input[type=radio] {
+	margin: 10px 20px 10px 5px;
 }

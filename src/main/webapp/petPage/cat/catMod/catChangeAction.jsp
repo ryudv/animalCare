@@ -44,7 +44,7 @@
 					PrintWriter script = response.getWriter();
 					script.println("<script>");
 					script.println("alert('반려묘 정보가 수정되었습니다')");
-					script.println("location.href='catChange.jsp'");
+					script.println("location.href='catMod.jsp'");
 					script.println("</script>");
 				}
 			
