@@ -78,7 +78,7 @@ public class CatDAO {
 	}
 	
 	// 사료&간식 데이터베이스 전송
-		public int food(Cat cat) {
+	public int food(Cat cat) {
 			  String sql = "insert into food values(?, ?, ?, ?, ?, ?)";
 			  try {
 			    pstmt = conn.prepareStatement(sql);
@@ -96,7 +96,7 @@ public class CatDAO {
 		}
 		
 	//  청소&목욕 데이터베이스 전송
-			public int clean(Cat cat) {
+	public int clean(Cat cat) {
 				  String sql = "insert into clean values(?, ?, ?, ?)";
 				  try {
 				    pstmt = conn.prepareStatement(sql);
@@ -155,7 +155,7 @@ public class CatDAO {
 	}
 	
 	// 청소&목욕 정보를 출력
-		public ArrayList<Cat> cSearch(){
+	public ArrayList<Cat> cSearch(){
 			ArrayList<Cat> cList = new ArrayList<Cat>();
 			try {
 				String sql = "select * from clean";
@@ -176,7 +176,7 @@ public class CatDAO {
 		}
 		
 	// 사료&간식 정보를 출력
-		public ArrayList<Cat> fSearch(){
+	public ArrayList<Cat> fSearch(){
 			ArrayList<Cat> fList = new ArrayList<Cat>();
 			try {
 				String sql = "select * from food";
@@ -199,7 +199,7 @@ public class CatDAO {
 		}
 		
 	// 신체 정보를 출력
-		public ArrayList<Cat> bSearch(){
+	public ArrayList<Cat> bSearch(){
 			ArrayList<Cat> bList = new ArrayList<Cat>();
 			try {
 				String sql = "select * from catBody";
@@ -233,19 +233,6 @@ public class CatDAO {
 			e.printStackTrace();
 		}
 		return -1;
-	}
-	
-	// 반려묘 정보 삭제
-	public int delete(String catName) {
-		String sql = "DELETE FROM cat WHERE catName = ?";
-		try {
-			PreparedStatement pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, catName);
-			return pstmt.executeUpdate();
-		}catch (Exception e) {
-			e.printStackTrace();
-		}
-		return -1; 
 	}
 
 }

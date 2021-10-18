@@ -18,6 +18,7 @@ function mainZoomIn(e) {
     event.target.style.transition = "all 0.4s";
  }
 
+
 function zoomIn(e) {
     event.target.style.transform = "scale(1.1)";
     event.target.style.zIndex = 1;

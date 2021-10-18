@@ -44,7 +44,7 @@
 					PrintWriter script = response.getWriter();
 					script.println("<script>");
 					script.println("alert('반려견 정보가 수정되었습니다')");
-					script.println("location.href='dogChange.jsp'");
+					script.println("location.href='dogMod.jsp'");
 					script.println("</script>");
 				}
 			

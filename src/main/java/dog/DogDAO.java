@@ -237,19 +237,5 @@ public class DogDAO {
 			}
 			return -1;
 		}
-		
-		// 반려견 정보 삭제
-		public int delete(String dogName) {
-			String sql = "delete from dog where dogName = ?";
-			try {
-				PreparedStatement pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, dogName);
-				return pstmt.executeUpdate();
-			}catch (Exception e) {
-				e.printStackTrace();
-			}
-			return -1; 
-		}
-	
 
 }
